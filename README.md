@@ -1,4 +1,4 @@
 # FallGameJam2018
 
-Readme!
-Ändrad från lokal kopia
+Ändra följande inställningar i Unity:
+Project Settings - Editor - Version control: Visible Meta Files, Asset Serialization: Force Text
