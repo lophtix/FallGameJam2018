@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyInput : MonoBehaviour {
+public class TestMoveScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
