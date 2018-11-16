@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
+    public float up, right;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -11,6 +13,6 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        transform.position += new Vector3(0, up, 0);
 	}
 }

@@ -1,30 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public GameObject Player; 
 
-public class NewBehaviourScript : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		Player = GameObject.Find("MainCharacter");
+
+public class KeyInput : MonoBehaviour {
+
+    // Use this for initialization
+    private PlayerMovement movement;
+    private GameObject player;
+
+    void Start() {
+        player = GameObject.Find("MainCharacter");
+
+
+        movement = player.GetComponent<PlayerMovement>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey(KeyCode("W"))){
-			Player.up = 1;
-		} else if (Input.GetKey(KeyCode("S"))){
-			Player.up = -1;
+		if (Input.GetKey(KeyCode.W)){
+            movement.up = 1;
+		} else if (Input.GetKey(KeyCode.S)){
+            movement.up = -1;
 		} else {
-			Player.up = 0;
+            movement.up = 0;
 		} 
-		if (Input.GetKey(KeyCode("D"))){
-			Player.right = 1;
-		} else if (Input.GetKey(KeyCode("A"))){
-			Player.right = -1;
+		if (Input.GetKey(KeyCode.D)){
+            movement.right = 1;
+		} else if (Input.GetKey(KeyCode.A)){
+            movement.right = -1;
 		} else {
-			Player.right = 0;
+            movement.right = 0;
 		}
 		
 	}
