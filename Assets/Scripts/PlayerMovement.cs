@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.position += new Vector3(speed*right, speed*up, 0f);
+        Debug.Log(right);
 	}
 
     public void setDirection(float up, float right)
