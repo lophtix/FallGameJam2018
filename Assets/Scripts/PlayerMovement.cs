@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
-    public float up, right;
+    private float up, right;
     public float speed;
 
 	// Use this for initialization
@@ -16,4 +16,10 @@ public class PlayerMovement : MonoBehaviour {
 	void Update () {
         transform.position += new Vector3(speed*right, speed*up, 0f);
 	}
+
+    public void setDirection(float up, float right)
+    {
+        this.up = up;
+        this.right = right;
+    }
 }
