@@ -13,6 +13,6 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position += new Vector3(right, up, 0);
+        transform.position += new Vector2(0.1*right, 0.1*up);
 	}
 }
