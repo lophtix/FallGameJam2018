@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
     public float up, right;
+    public float speed;
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +14,6 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position += new Vector2(0.1*right, 0.1*up);
+        transform.position += new Vector3(speed*right, speed*up, 0f);
 	}
 }
