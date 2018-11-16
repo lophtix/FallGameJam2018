@@ -1,8 +1,6 @@
-using System.Collections;
+rusing System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
 
 public class KeyInput : MonoBehaviour {
 
@@ -16,7 +14,7 @@ public class KeyInput : MonoBehaviour {
 
         movement = player.GetComponent<PlayerMovement>();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey(KeyCode.W)){
@@ -25,7 +23,7 @@ public class KeyInput : MonoBehaviour {
             movement.up = -1;
 		} else {
             movement.up = 0;
-		} 
+		}
 		if (Input.GetKey(KeyCode.D)){
             movement.right = 1;
 		} else if (Input.GetKey(KeyCode.A)){
@@ -33,6 +31,6 @@ public class KeyInput : MonoBehaviour {
 		} else {
             movement.right = 0;
 		}
-		
+
 	}
 }
