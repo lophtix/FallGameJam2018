@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public GameObject Player; 
 
-public class NewBehaviourScript : MonoBehaviour {
+public class KeyInput : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
