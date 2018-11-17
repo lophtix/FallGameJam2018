@@ -7,7 +7,8 @@ public class Wire : MonoBehaviour {
     private bool isOn = false;
     private GameObject[] neighboringWires;
 
-    public Sprite wireOn, wireOff;
+    public Animation wireOn;
+    public Sprite wireOff;
 
 	// Use this for initialization
 	void Start () {
@@ -24,7 +25,7 @@ public class Wire : MonoBehaviour {
         isOn = status;
         if (status)
         {
-            gameObject.GetComponent<SpriteRenderer>().sprite = wireOn;
+            //gameObject.GetComponent<SpriteRenderer>().animation = wireOn;
         }
         else
         {

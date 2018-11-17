@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4270149785696790}
   - component: {fileID: 212188254355616084}
   - component: {fileID: 114891796605506060}
+  - component: {fileID: 95439274795719630}
   m_Layer: 0
   m_Name: Wire
   m_TagString: Wire
@@ -41,6 +42,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!95 &95439274795719630
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1862955673606692}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9ed4e9bb51ab0d64e95b992f696adb55, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114891796605506060
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,7 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09fd3edccdd8d842988c491ca62cc45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wireOn: {fileID: 21300010, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
+  wireOn: {fileID: 0}
   wireOff: {fileID: 21300008, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
 --- !u!212 &212188254355616084
 SpriteRenderer:
