@@ -1,11 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WireBattery : MonoBehaviour {
+public class WireBattery : LogicWire {
 
-	// Use this for initialization
-	void Start () {
+    public GameObject[] circuits;
+
+    public override void setStatus(bool status)
+    {
+    }
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
