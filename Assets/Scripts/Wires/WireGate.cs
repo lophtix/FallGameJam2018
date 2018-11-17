@@ -11,6 +11,7 @@ public class WireGate : LogicWire {
     public Sprite GateClosed, GateOpened;
     public float reachDistance;
     public bool state = false;
+    public bool open = false;
 
 
 
@@ -26,14 +27,14 @@ public class WireGate : LogicWire {
 	void Update () {
 		if(Vector2.Distance(playerTransform.position, transform.position) < reachDistance && keyInput.getInputUsePressed())
         {
-            if(state)
+            if(open)
             {
                 GetComponent<SpriteRenderer>().sprite = GateClosed;
-                state = false;
+                open = false;
             }
             else
             {
-                state = true;
+                open = true;
                 GetComponent<SpriteRenderer>().sprite = GateOpened;
             }
         }
@@ -43,5 +44,10 @@ public class WireGate : LogicWire {
     public override void setStatus(bool state)
     {
         this.state = state;
+    }
+
+    public override void pulse(bool status)
+    {
+
     }
 }

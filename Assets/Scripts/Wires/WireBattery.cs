@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class WireBattery : LogicWire {
 
-    public GameObject[] circuits;
+    public GameObject[] connectedWires;
 
     public override void setStatus(bool status)
     {
@@ -20,4 +20,9 @@ public class WireBattery : LogicWire {
 	void Update () {
 		
 	}
+
+    public override void pulse(bool status)
+    {
+
+    }
 }

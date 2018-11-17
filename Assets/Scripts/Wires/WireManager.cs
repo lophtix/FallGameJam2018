@@ -28,4 +28,6 @@ public class WireManager : MonoBehaviour {
             wire.GetComponent<LogicWire>().setStatus(false);
         }
     }
+
+    
 }

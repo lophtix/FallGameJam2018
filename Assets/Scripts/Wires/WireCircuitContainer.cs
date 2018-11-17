@@ -25,6 +25,12 @@ public class WireCircuitContainer : LogicWire {
             {
                 wire.setStatus(state);
             }
+            currentState = state;
         }
+    }
+
+    public override void pulse(bool status)
+    {
+        setStatus(status);
     }
 }
