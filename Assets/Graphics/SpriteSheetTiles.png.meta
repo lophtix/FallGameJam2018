@@ -3,9 +3,11 @@ guid: 86e3a9ebf4bb20f4cb00bb0329c60f72
 TextureImporter:
   fileIDToRecycleName:
     21300000: Floor_Standard
-    21300002: Wire_Straight
+    21300002: Wire_Straight_On
     21300004: Wire_Gate
     21300006: Wire_Gate_Closed
+    21300008: Wire_Straight_Off
+    21300010: Wire_Battery
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -108,7 +110,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wire_Straight
+      name: Wire_Straight_On
       rect:
         serializedVersion: 2
         x: 0
@@ -163,6 +165,46 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e3b15965b3d9dbc41926989ce799b2c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wire_Straight_Off
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8538374d26cefb94cbf5d70843d2b38a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wire_Battery
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72873758e54e9e740a76eab449390218
       vertices: []
       indices: 
       edges: []

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WireGate : MonoBehaviour {
+public class WireGate : LogicWire {
 
     private GameObject player;
     private Transform playerTransform;
@@ -11,6 +11,8 @@ public class WireGate : MonoBehaviour {
     public Sprite GateClosed, GateOpened;
     public float reachDistance;
     public bool state = false;
+
+
 
 	// Use this for initialization
 	void Start () {
@@ -37,4 +39,9 @@ public class WireGate : MonoBehaviour {
         }
         
 	}
+
+    public override void setStatus(bool state)
+    {
+        this.state = state;
+    }
 }
