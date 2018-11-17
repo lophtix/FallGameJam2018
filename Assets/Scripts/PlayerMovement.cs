@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour {
     public float speed;
     private Rigidbody2D rb;
 
+<<<<<<< HEAD
     private GameObject clock;
     private ClockScript time;
     private int tick;
@@ -18,26 +19,21 @@ public class PlayerMovement : MonoBehaviour {
         time = clock.GetComponent<ClockScript>();
         rb = GetComponent<Rigidbody2D>();
     }
+=======
+	// Use this for initialization
+	void Start () {
+		
+	}
+>>>>>>> parent of 564e950... Added record+playback function
 	
 	// Update is called once per frame
 	void Update () {
         rb.velocity = new Vector3(speed* horizontal, speed* vertical, 0f);
 	}
 
-    private void FixedUpdate()
-    {
-        tick = time.tick;
-        print(tick);
-        if (tick == 199)
-        {
-            transform.position = new Vector3(0f, 0f, 0f);
-        }
-    }
-
     public void setKeyInputs(float vertical, float horizontal)
     {
         this.vertical = vertical;
         this.horizontal = horizontal;
-
     }
 }
