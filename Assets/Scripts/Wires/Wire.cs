@@ -25,11 +25,12 @@ public class Wire : MonoBehaviour {
         isOn = status;
         if (status)
         {
-            //gameObject.GetComponent<SpriteRenderer>().animation = wireOn;
+            gameObject.GetComponent<Animator>().enabled = true;
         }
         else
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = wireOff;
+            gameObject.GetComponent<Animator>().enabled = false;
         }
     }
 }
