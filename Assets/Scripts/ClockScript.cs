@@ -13,7 +13,6 @@ public class ClockScript : MonoBehaviour {
 
 	void FixedUpdate () {
         tick += (int)Input.GetAxis("Timeshift") * 3 + 1;
-        print("Time: " + tick);
 
         if (tick < 0) { tick = 0; }
 
