@@ -6,15 +6,16 @@ public class PlayerMovement : MonoBehaviour {
 
     private float vertical, horizontal;
     public float speed;
+    private Rigidbody2D rb;
 
 	// Use this for initialization
 	void Start () {
-		
+        rb = GetComponent<Rigidbody2D>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position += new Vector3(speed* horizontal, speed* vertical, 0f);
+        rb.velocity = new Vector3(speed* horizontal, speed* vertical, 0f);
 	}
 
     public void setKeyInputs(float vertical, float horizontal)
