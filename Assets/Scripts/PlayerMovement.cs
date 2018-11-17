@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour {
     private Rigidbody2D rb;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private GameObject clock;
     private ClockScript time;
     private int tick;
@@ -20,10 +21,15 @@ public class PlayerMovement : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
     }
 =======
+=======
+>>>>>>> parent of 564e950... Added record+playback function
 	// Use this for initialization
 	void Start () {
 		
 	}
+<<<<<<< HEAD
+>>>>>>> parent of 564e950... Added record+playback function
+=======
 >>>>>>> parent of 564e950... Added record+playback function
 	
 	// Update is called once per frame
