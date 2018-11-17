@@ -52,8 +52,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e8272cb60dcf8459dfd444a9431f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonOn: {fileID: 21300012, guid: 86e3a9ebf4bb20f4cb00bb0329c60f72, type: 3}
-  buttonOff: {fileID: 21300014, guid: 86e3a9ebf4bb20f4cb00bb0329c60f72, type: 3}
+  buttonOn: {fileID: 21300000, guid: 72182e63d34d6254b84958596d1a7bb7, type: 3}
+  buttonOff: {fileID: 21300002, guid: 72182e63d34d6254b84958596d1a7bb7, type: 3}
   reachDistance: 0.32
   pressed: 0
   IAffect: []
@@ -92,12 +92,12 @@ SpriteRenderer:
   m_SortingLayerID: 435964461
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300012, guid: 86e3a9ebf4bb20f4cb00bb0329c60f72, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 72182e63d34d6254b84958596d1a7bb7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
