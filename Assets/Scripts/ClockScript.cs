@@ -5,6 +5,8 @@ using UnityEngine;
 public class ClockScript : MonoBehaviour {
     public int tick = 0;
     public int loop = 0;
+
+    public GameObject clone;
 	// Use this for initialization
 	void Start () {
 		
@@ -17,7 +19,7 @@ public class ClockScript : MonoBehaviour {
         {
             tick = 0;
             loop += 1;
-            print("loop: " + loop);
+            Instantiate(clone);
         }
 	}
 }
