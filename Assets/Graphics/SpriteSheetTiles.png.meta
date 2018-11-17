@@ -8,6 +8,10 @@ TextureImporter:
     21300006: Wire_Gate_Closed
     21300008: Wire_Straight_Off
     21300010: Wire_Battery
+    21300012: Wire_Button_On
+    21300014: Wire_Button_Off
+    21300016: Gate_Closed
+    21300018: Gate_Open
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -198,13 +202,53 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 72873758e54e9e740a76eab449390218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gate_Closed
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940c81c3e7f076e4690bff1b9905f381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gate_Open
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8def52b051e33b543b54a8a087a0cce3
       vertices: []
       indices: 
       edges: []
