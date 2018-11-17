@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class KeyInput : MonoBehaviour {
 
@@ -11,12 +12,16 @@ public class KeyInput : MonoBehaviour {
     private bool justPressedUsed = false;
     private bool hasNotReleasedUse = false;
 
+    private bool pause = false;
+
     void Start() {
         player = GameObject.Find("MainCharacter");
 
 
         movement = player.GetComponent<PlayerMovement>();
-	}
+
+        GameObject.FindObjectOfType<Canvas>().enabled = false;
+    }
 
 	// Update is called once per frame
 	void Update () {
@@ -38,6 +43,8 @@ public class KeyInput : MonoBehaviour {
         {
             hasNotReleasedUse = false;
         }
+
+        testForPause();
 	}
 
     public bool getInputUse()
@@ -50,6 +57,30 @@ public class KeyInput : MonoBehaviour {
         return justPressedUsed;
     }
 
+    private void testForPause()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (pause)
+            {
+                unPause();
+                
+            }
+            else
+            {
+                GameObject.FindObjectOfType<Canvas>().enabled = true;
+                pause = true;
+                Time.timeScale = 0;
+            }
+            
+        }
+    }
 
+    public void unPause()
+    {
+        GameObject.FindObjectOfType<Canvas>().enabled = false;
+        pause = false;
+        Time.timeScale = 1;
+    }
     
 }

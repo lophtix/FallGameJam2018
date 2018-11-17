@@ -9,60 +9,59 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1881359753014670}
+  m_RootGameObject: {fileID: 1841375063899488}
   m_IsPrefabAsset: 1
---- !u!1 &1881359753014670
+--- !u!1 &1841375063899488
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4928423489195858}
-  - component: {fileID: 212895895932429162}
-  - component: {fileID: 114014542872131258}
+  - component: {fileID: 4880544177233228}
+  - component: {fileID: 212164167762481304}
+  - component: {fileID: 114520420055578514}
   m_Layer: 0
-  m_Name: WireButton
+  m_Name: WireSplit
   m_TagString: LogicWire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4928423489195858
+--- !u!4 &4880544177233228
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1881359753014670}
+  m_GameObject: {fileID: 1841375063899488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.852, y: 0.032, z: 0}
+  m_LocalPosition: {x: 1.9571124, y: -0.6429745, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114014542872131258
+--- !u!114 &114520420055578514
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1881359753014670}
+  m_GameObject: {fileID: 1841375063899488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0e8272cb60dcf8459dfd444a9431f99, type: 3}
+  m_Script: {fileID: 11500000, guid: 8cfe045d87f2e4943907cb12e7436fbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonOn: {fileID: 21300000, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
-  buttonOff: {fileID: 21300002, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
-  reachDistance: 0.16
-  pressed: 0
-  IAffect: []
---- !u!212 &212895895932429162
+  isAnAnd: 0
+  input1: {fileID: 0}
+  input2: {fileID: 0}
+  output: {fileID: 0}
+--- !u!212 &212164167762481304
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1881359753014670}
+  m_GameObject: {fileID: 1841375063899488}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -89,10 +88,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 435964461
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
+  m_Sprite: {fileID: 21300032, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

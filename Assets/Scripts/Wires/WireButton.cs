@@ -22,7 +22,6 @@ public class WireButton : LogicWire {
 	// Update is called once per frame
 	void Update () {
         players = GameObject.FindGameObjectsWithTag("Player");
-        //print(players.Length);
 
         pressed = false;
         pulse(pressed);

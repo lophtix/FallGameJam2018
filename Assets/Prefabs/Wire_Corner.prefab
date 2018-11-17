@@ -9,60 +9,75 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1881359753014670}
+  m_RootGameObject: {fileID: 1793073691064064}
   m_IsPrefabAsset: 1
---- !u!1 &1881359753014670
+--- !u!1 &1793073691064064
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4928423489195858}
-  - component: {fileID: 212895895932429162}
-  - component: {fileID: 114014542872131258}
+  - component: {fileID: 4838038954919618}
+  - component: {fileID: 212498969752116568}
+  - component: {fileID: 114695256898921228}
+  - component: {fileID: 95065450643597398}
   m_Layer: 0
-  m_Name: WireButton
-  m_TagString: LogicWire
+  m_Name: Wire_Corner
+  m_TagString: Wire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4928423489195858
+--- !u!4 &4838038954919618
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1881359753014670}
+  m_GameObject: {fileID: 1793073691064064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.852, y: 0.032, z: 0}
+  m_LocalPosition: {x: 1.638, y: -0.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114014542872131258
+--- !u!95 &95065450643597398
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1793073691064064}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7fa1cfa933861e144a0f02c94e02b232, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114695256898921228
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1881359753014670}
+  m_GameObject: {fileID: 1793073691064064}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0e8272cb60dcf8459dfd444a9431f99, type: 3}
+  m_Script: {fileID: 11500000, guid: f09fd3edccdd8d842988c491ca62cc45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonOn: {fileID: 21300000, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
-  buttonOff: {fileID: 21300002, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
-  reachDistance: 0.16
-  pressed: 0
-  IAffect: []
---- !u!212 &212895895932429162
+  wireOff: {fileID: 21300046, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
+--- !u!212 &212498969752116568
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1881359753014670}
+  m_GameObject: {fileID: 1793073691064064}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -92,7 +107,7 @@ SpriteRenderer:
   m_SortingLayerID: 435964461
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
+  m_Sprite: {fileID: 21300046, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
