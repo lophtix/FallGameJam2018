@@ -801,7 +801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feea4e1e1be04614282af9935a72ed6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.5
   front: {fileID: 21300052, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
   back: {fileID: 21300048, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
   side: {fileID: 21300054, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
