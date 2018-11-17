@@ -7,7 +7,6 @@ public class Wire : MonoBehaviour {
     private bool isOn = false;
     private GameObject[] neighboringWires;
 
-    public Animation wireOn;
     public Sprite wireOff;
 
 	// Use this for initialization
