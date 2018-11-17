@@ -1671,6 +1671,24 @@ Prefab:
       propertyPath: IAffect.Array.data[1]
       value: 
       objectReference: {fileID: 1310282175}
+    - target: {fileID: 114014542872131258, guid: 1116dd9c7d798a344a3326400c97850d,
+        type: 2}
+      propertyPath: buttonOff
+      value: 
+      objectReference: {fileID: 21300002, guid: 3a2fc7ff4abe77842859f6313bb6c535,
+        type: 3}
+    - target: {fileID: 114014542872131258, guid: 1116dd9c7d798a344a3326400c97850d,
+        type: 2}
+      propertyPath: buttonOn
+      value: 
+      objectReference: {fileID: 21300000, guid: 3a2fc7ff4abe77842859f6313bb6c535,
+        type: 3}
+    - target: {fileID: 212895895932429162, guid: 1116dd9c7d798a344a3326400c97850d,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: 3a2fc7ff4abe77842859f6313bb6c535,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1116dd9c7d798a344a3326400c97850d, type: 2}
   m_IsPrefabAsset: 0
