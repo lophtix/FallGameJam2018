@@ -7,6 +7,6 @@ public class StartGame : MonoBehaviour {
 
 	public void playGame()
     {
-        SceneManager.LoadScene("Assets/Scenes/MvpLevel");
+        SceneManager.LoadScene(1);
     }
 }
