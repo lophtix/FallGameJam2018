@@ -24,7 +24,6 @@ public class WireCircuitContainer : LogicWire {
             foreach(Wire wire in wires)
             {
                 wire.setStatus(state);
-                Debug.Log(state);
             }
             currentState = state;
         }
