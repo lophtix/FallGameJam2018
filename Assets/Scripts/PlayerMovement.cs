@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
-    private float up, right;
+    private float vertical, horizontal;
     public float speed;
 
 	// Use this for initialization
@@ -14,12 +14,12 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position += new Vector3(speed*right, speed*up, 0f);
+        transform.position += new Vector3(speed* horizontal, speed* vertical, 0f);
 	}
 
-    public void setDirection(float up, float right)
+    public void setKeyInputs(float vertical, float horizontal)
     {
-        this.up = up;
-        this.right = right;
+        this.vertical = vertical;
+        this.horizontal = horizontal;
     }
 }

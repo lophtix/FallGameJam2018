@@ -8,6 +8,9 @@ public class KeyInput : MonoBehaviour {
     private PlayerMovement movement;
     private GameObject player;
 
+    private bool justPressedUsed = false;
+    private bool hasNotReleasedUse = false;
+
     void Start() {
         player = GameObject.Find("MainCharacter");
 
@@ -17,8 +20,36 @@ public class KeyInput : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        movement.setDirection(Input.GetAxis("Vertical"), Input.GetAxis("Horizontal"));
+        movement.setKeyInputs(Input.GetAxis("Vertical"), Input.GetAxis("Horizontal"));
+
+        if(Input.GetAxis("Use") != 0)
+        {
+            if (!hasNotReleasedUse)
+            {
+                justPressedUsed = true;
+                hasNotReleasedUse = true;
+            }
+            else
+            {
+                justPressedUsed = false;
+            }
+        }
+        else
+        {
+            hasNotReleasedUse = false;
+        }
 	}
+
+    public bool getInputUse()
+    {
+        return Input.GetAxis("Use") != 0;
+    }
+
+    public bool getInputUsePressed()
+    {
+        return justPressedUsed;
+    }
+
 
     
 }
