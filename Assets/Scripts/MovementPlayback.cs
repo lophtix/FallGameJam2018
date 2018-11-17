@@ -23,7 +23,7 @@ public class MovementPlayback : MonoBehaviour {
     private void FixedUpdate()
     {
         tick = time.tick;
-        if(time.loop > 0)
+        if (time.loop > 0)
         {
             transform.position = cloneArrays[time.loop - 1][tick];
         }

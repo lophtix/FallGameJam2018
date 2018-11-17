@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class WireButton : LogicWire {
 
-    private GameObject player;
-    private Transform playerTransform;
+    private GameObject[] players;
     private KeyInput keyInput;
 
     public Sprite buttonOn, buttonOff;
@@ -16,27 +15,31 @@ public class WireButton : LogicWire {
 
     // Use this for initialization
     void Start () {
-        player = GameObject.Find("MainCharacter");
-        playerTransform = player.transform;
+       
         keyInput = GameObject.Find("KeyInputController").GetComponent<KeyInput>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if (Vector2.Distance(playerTransform.position, transform.position) < reachDistance)
-        {
-            GetComponent<SpriteRenderer>().sprite = buttonOn;
-            
-            pressed = true;
-            pulse(pressed);
-        }
-        else
-        {
-            pressed = false;
-            pulse(pressed);
-            GetComponent<SpriteRenderer>().sprite = buttonOff;
+        players = GameObject.FindGameObjectsWithTag("Player");
+        print(players.Length);
+
+        pressed = false;
+        pulse(pressed);
+        GetComponent<SpriteRenderer>().sprite = buttonOff;
+
+        foreach (GameObject clone in players) {
+            if (Vector2.Distance(clone.transform.position, transform.position) < reachDistance)
+            {
+                GetComponent<SpriteRenderer>().sprite = buttonOn;
+
+                pressed = true;
+                pulse(pressed);
+            }
         }
     }
+
+
 
     public override void pulse(bool status)
     {

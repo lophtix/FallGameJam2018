@@ -15,6 +15,7 @@ public class MovementRecorder : MonoBehaviour {
     void Start () {
         clock = GameObject.Find("Clock");
         time = clock.GetComponent<ClockScript>();
+       
     }
 
     void FixedUpdate()
