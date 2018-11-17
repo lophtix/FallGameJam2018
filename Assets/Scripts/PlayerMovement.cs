@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour {
     private ClockScript time;
     private int tick;
 
+    public Sprite front, back, side;
+
     // Use this for initialization
     void Start () {
         clock = GameObject.Find("Clock");
@@ -22,6 +24,8 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         rb.velocity = new Vector3(speed* horizontal, speed* vertical, 0f);
+
+        animations();
 	}
 
     private void FixedUpdate()
@@ -38,5 +42,29 @@ public class PlayerMovement : MonoBehaviour {
         this.vertical = vertical;
         this.horizontal = horizontal;
 
+    }
+
+    private void animations()
+    {
+        
+        if (vertical == 0 && horizontal > 0)
+        {
+            gameObject.GetComponentInChildren<SpriteRenderer>().sprite = side;
+            gameObject.GetComponentInChildren<SpriteRenderer>().flipX = false;
+        }
+        else if (vertical == 0 && horizontal < 0)
+        {
+            gameObject.GetComponentInChildren<SpriteRenderer>().sprite = side;
+            gameObject.GetComponentInChildren<SpriteRenderer>().flipX = true;
+        }
+        else if(vertical > horizontal)
+        {
+            gameObject.GetComponentInChildren<SpriteRenderer>().sprite = back;
+        }
+        else if (vertical < horizontal)
+        {
+            gameObject.GetComponentInChildren<SpriteRenderer>().sprite = front;
+        }
+        
     }
 }
