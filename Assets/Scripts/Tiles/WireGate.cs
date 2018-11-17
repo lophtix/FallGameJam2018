@@ -10,6 +10,7 @@ public class WireGate : MonoBehaviour {
 
     public Sprite GateClosed, GateOpened;
     public float reachDistance;
+    public bool state = false;
 
 	// Use this for initialization
 	void Start () {
@@ -23,12 +24,14 @@ public class WireGate : MonoBehaviour {
 	void Update () {
 		if(Vector2.Distance(playerTransform.position, transform.position) < reachDistance && keyInput.getInputUsePressed())
         {
-            if(GetComponent<SpriteRenderer>().sprite == GateOpened)
+            if(state)
             {
                 GetComponent<SpriteRenderer>().sprite = GateClosed;
+                state = false;
             }
             else
             {
+                state = true;
                 GetComponent<SpriteRenderer>().sprite = GateOpened;
             }
         }
