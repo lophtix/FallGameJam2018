@@ -293,6 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec17d2f3f7c57a4bacaff1bd113c31b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clone: {fileID: 1107101753360854, guid: 0aceaf33d23e73c4d8e815431171e7f4, type: 2}
 --- !u!1 &1043122115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1665,7 +1666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tick: 0
   loop: 0
-  clone: {fileID: 1107101753360854, guid: 0aceaf33d23e73c4d8e815431171e7f4, type: 2}
+  resetBool: 0
 --- !u!4 &1321104441
 Transform:
   m_ObjectHideFlags: 0

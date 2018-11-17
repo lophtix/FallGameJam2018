@@ -5,21 +5,33 @@ using UnityEngine;
 public class ClockScript : MonoBehaviour {
     public int tick = 0;
     public int loop = 0;
+    public bool resetBool = false;
 
-    public GameObject clone;
-	// Use this for initialization
-	void Start () {
-		
-	}
+    
+
 	
-	// Update is called once per frame
+
 	void FixedUpdate () {
-        tick += 1;
-        if (tick == 200)
+        tick += (int)Input.GetAxis("Timeshift") * 3 + 1;
+        print("Time: " + tick);
+
+        if (tick < 0) { tick = 0; }
+
+        if (resetBool == true)
         {
-            tick = 0;
-            loop += 1;
-            Instantiate(clone);
+            resetBool = false;
+        }
+
+        if (Input.GetButtonDown("Reset"))
+        {
+            TimeReset();
         }
 	}
+
+    void TimeReset()
+    {
+        tick = 0;
+        
+        resetBool = true;
+    }
 }

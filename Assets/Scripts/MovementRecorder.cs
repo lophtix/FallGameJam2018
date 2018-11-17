@@ -7,8 +7,9 @@ public class MovementRecorder : MonoBehaviour {
     private ClockScript time;
     private int tick;
 
+    public GameObject clone;
 
-    List<Vector3> playerArray = new List<Vector3>();
+    List<Vector3> playerArray = new List<Vector3>(new Vector3[500]);
     List<List<Vector3>> cloneArrays = new List<List<Vector3>>();
 
     // Use this for initialization
@@ -22,11 +23,32 @@ public class MovementRecorder : MonoBehaviour {
     {
         tick = time.tick;
         
-        playerArray.Add(transform.position);
+        if (playerArray.Count < tick + 2)
+        {
+            playerArray.Add(new Vector3(0f, 0f, 0f));
+            if (playerArray.Count < tick + 2)
+            {
+                playerArray.Add(new Vector3(0f, 0f, 0f));
+            }
+        }
         
-        if (time.tick == 199) {
+
+        playerArray[tick] = transform.position;
+
+        if (Input.GetAxis("Timeshift") < 0)
+        {
+            print("rewinding");
+            transform.position = playerArray[tick-1];
+        }
+
+        if (time.resetBool == true) {
             cloneArrays.Add(playerArray);
             playerArray = new List<Vector3>();
+            transform.position = new Vector3(0f, 0f, 0f);
+
+            time.loop += 1;
+            clone.GetComponent<MovementPlayback>().instantiatedLoop = time.loop - 1;
+            Instantiate(clone);
         }
     }
 
