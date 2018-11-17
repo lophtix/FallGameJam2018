@@ -7,19 +7,35 @@ public class PlayerMovement : MonoBehaviour {
     private float vertical, horizontal;
     public float speed;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    private GameObject clock;
+    private ClockScript time;
+    private int tick;
+
+    // Use this for initialization
+    void Start () {
+        clock = GameObject.Find("Clock");
+        time = clock.GetComponent<ClockScript>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
         transform.position += new Vector3(speed* horizontal, speed* vertical, 0f);
 	}
 
+    private void FixedUpdate()
+    {
+        tick = time.tick;
+        print(tick);
+        if (tick == 199)
+        {
+            transform.position = new Vector3(0f, 0f, 0f);
+        }
+    }
+
     public void setKeyInputs(float vertical, float horizontal)
     {
         this.vertical = vertical;
         this.horizontal = horizontal;
+
     }
 }
