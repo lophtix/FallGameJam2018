@@ -24,7 +24,14 @@ public class WireCircuitContainer : LogicWire {
             foreach(Wire wire in wires)
             {
                 wire.setStatus(state);
+                Debug.Log(state);
             }
+            currentState = state;
         }
+    }
+
+    public override void pulse(bool status)
+    {
+        setStatus(status);
     }
 }

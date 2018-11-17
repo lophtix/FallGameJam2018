@@ -5,4 +5,6 @@ using UnityEngine;
 public abstract class LogicWire : MonoBehaviour {
 
     public abstract void setStatus(bool status);
+
+    public abstract void pulse(bool status);
 }
