@@ -8,6 +8,8 @@ public class MovementPlayback : MonoBehaviour {
     private int tick;
     private int loop;
 
+    public int instantiatedLoop = 0;
+
     private GameObject player;
 
     List<List<Vector3>> cloneArrays;
@@ -25,7 +27,7 @@ public class MovementPlayback : MonoBehaviour {
         tick = time.tick;
         if (time.loop > 0)
         {
-            transform.position = cloneArrays[time.loop - 1][tick];
+            transform.position = cloneArrays[instantiatedLoop][tick - 1];
         }
     }
 }

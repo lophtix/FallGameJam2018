@@ -30,11 +30,7 @@ public class PlayerMovement : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        tick = time.tick;
-        if (tick == 199)
-        {
-            transform.position = new Vector3(0f, 0f, 0f);
-        }
+        
     }
 
     public void setKeyInputs(float vertical, float horizontal)
