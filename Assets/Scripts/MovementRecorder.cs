@@ -32,7 +32,6 @@ public class MovementRecorder : MonoBehaviour {
             }
         }
         
-
         playerArray[tick] = transform.position;
 
         if (Input.GetAxis("Timeshift") < 0)
@@ -48,6 +47,11 @@ public class MovementRecorder : MonoBehaviour {
             time.loop += 1;
             clone.GetComponent<MovementPlayback>().instantiatedLoop = time.loop - 1;
             Instantiate(clone);
+        }
+
+        for (int i = tick + 1; i < playerArray.Count; i++)
+        {
+            playerArray.RemoveAt(playerArray.Count - 1);
         }
     }
 
