@@ -37,7 +37,6 @@ public class MovementRecorder : MonoBehaviour {
 
         if (Input.GetAxis("Timeshift") < 0)
         {
-            print("rewinding");
             transform.position = playerArray[tick-1];
         }
 
