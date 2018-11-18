@@ -52,6 +52,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54872bb528e4aff43a5c8828a19082cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Outputs: []
+  Inputs: []
   wires: []
   buttons: []
   gates: []
@@ -90,8 +92,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1810728819
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300076, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
