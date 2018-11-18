@@ -650,6 +650,7 @@ GameObject:
   - component: {fileID: 864971466}
   - component: {fileID: 864971465}
   - component: {fileID: 864971464}
+  - component: {fileID: 864971467}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -714,8 +715,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1946983203}
-        m_MethodName: unPause
+      - m_Target: {fileID: 864971467}
+        m_MethodName: restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -769,6 +770,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 864971462}
   m_CullTransparentMesh: 0
+--- !u!114 &864971467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 864971462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7aa91d64c7f0343975f0c818489339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &884982593
 GameObject:
   m_ObjectHideFlags: 0
@@ -2593,6 +2605,7 @@ GameObject:
   - component: {fileID: 1433808259}
   - component: {fileID: 1433808258}
   - component: {fileID: 1433808257}
+  - component: {fileID: 1433808260}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -2657,8 +2670,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1946983203}
-        m_MethodName: unPause
+      - m_Target: {fileID: 1433808260}
+        m_MethodName: switchToLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2712,6 +2725,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1433808255}
   m_CullTransparentMesh: 0
+--- !u!114 &1433808260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1433808255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c076e8a9fe99e4cabb60754ef46ccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToSwitchTo: 0
 --- !u!1 &1554193357
 GameObject:
   m_ObjectHideFlags: 0
