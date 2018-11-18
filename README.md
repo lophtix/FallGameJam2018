@@ -8,7 +8,8 @@ Puzzle game with a time traveling alchemist who clones to solve puzzles.
 
 Made during the LiU Fall Game Jam 2018 during 48 hours, the 16:th-18:th november 2018, at Creactive, Mjärdevi Science Park, Linköping, Sweden. The game based on the Game Jam theme "metal time-traveling".
 
-Prototype game test video: https://photos.app.goo.gl/zRfQehJgAVcN8qBw7 
+Prototype game test video: https://photos.app.goo.gl/zRfQehJgAVcN8qBw7
+Compiled versions coming soon. 
 
 Credits:
 
