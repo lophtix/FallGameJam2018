@@ -25,16 +25,18 @@ public class MovementRecorder : MonoBehaviour {
         
         if (playerArray.Count < tick + 2)
         {
-            playerArray.Add(new Vector3(10f, 0f, 0f));
+            playerArray.Add(transform.position);
             if (playerArray.Count < tick + 2)
             {
-                playerArray.Add(new Vector3(10f, 0f, 0f));
+                playerArray.Add(transform.position);
             }
         }
-        
-        playerArray[tick] = transform.position;
 
-        if (Input.GetAxis("Timeshift") < 0)
+        if (Input.GetAxis("Timeshift") >= 0 && tick < playerArray.Count)
+        {
+            playerArray[tick] = transform.position;
+        }
+        else if (Input.GetAxis("Timeshift") < 0 && tick > 0)
         {
             transform.position = playerArray[tick-1];
         }

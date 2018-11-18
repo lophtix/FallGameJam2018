@@ -33,7 +33,7 @@ public class ClockScript : MonoBehaviour {
 
     void TimeReset()
     {
-        tick = 0;
+        tick = 1;
         
         resetBool = true;
         

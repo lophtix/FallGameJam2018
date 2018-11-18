@@ -25,13 +25,13 @@ public class MovementPlayback : MonoBehaviour {
     private void FixedUpdate()
     {
         tick = time.tick;
-        if (tick < cloneArrays[instantiatedLoop].Count)
+        if (tick < cloneArrays[instantiatedLoop].Count && tick > 0)
         {
             transform.position = cloneArrays[instantiatedLoop][tick - 1];
-        } else
+        }
+        else
         {
             transform.position = new Vector3(-50f, 50f, 0f);
         }
-        
     }
 }
