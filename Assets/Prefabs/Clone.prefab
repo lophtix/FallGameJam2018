@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f83e23a1b8291f46a48130935f2fd36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instantiatedLoop: 0
+  instantiatedLoop: 2
 --- !u!114 &114864375759803668
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        rb.velocity = new Vector3(speed* horizontal, speed* vertical, 0f);
+        rb.velocity = new Vector3(speed * horizontal, speed * vertical, 0f);
 
         animations();
 	}

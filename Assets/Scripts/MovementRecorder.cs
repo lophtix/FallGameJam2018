@@ -9,7 +9,7 @@ public class MovementRecorder : MonoBehaviour {
 
     public GameObject clone;
 
-    List<Vector3> playerArray = new List<Vector3>(new Vector3[500]);
+    List<Vector3> playerArray = new List<Vector3>(/*new Vector3[500]*/);
     List<List<Vector3>> cloneArrays = new List<List<Vector3>>();
 
     // Use this for initialization
@@ -25,10 +25,10 @@ public class MovementRecorder : MonoBehaviour {
         
         if (playerArray.Count < tick + 2)
         {
-            playerArray.Add(new Vector3(0f, 0f, 0f));
+            playerArray.Add(new Vector3(10f, 0f, 0f));
             if (playerArray.Count < tick + 2)
             {
-                playerArray.Add(new Vector3(0f, 0f, 0f));
+                playerArray.Add(new Vector3(10f, 0f, 0f));
             }
         }
         
