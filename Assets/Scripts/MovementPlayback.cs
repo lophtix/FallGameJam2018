@@ -27,7 +27,6 @@ public class MovementPlayback : MonoBehaviour {
         tick = time.tick;
         if (tick < cloneArrays[instantiatedLoop].Count)
         {
-            print(cloneArrays[instantiatedLoop].Count);
             transform.position = cloneArrays[instantiatedLoop][tick - 1];
         } else
         {
