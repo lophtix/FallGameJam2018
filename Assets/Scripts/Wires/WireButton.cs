@@ -14,7 +14,6 @@ public class WireButton : LogicWire {
     private Wire[] wires;
     public WireGate[] wireGates;
     public Gate[] gates;
-
     // Use this for initialization
     void Start () {
        
