@@ -66,6 +66,7 @@ TextureImporter:
     21300122: Torch_4
     21300124: Torch_5
     21300126: Painting_4
+    21300128: Wall_Corner_Right
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -1429,13 +1430,33 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 6fe297bb12d80614eb0a891f01eec443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_Corner_Right
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d94e20a75716b4ba9da41d4838fc63
       vertices: []
       indices: 
       edges: []
