@@ -16,6 +16,7 @@ public class WireButtonContainer : LogicWire
     private bool buttonsState = true;
     private bool currentWireGatesState = false;
     private bool wireGatesState = true;
+    private bool state = false;
 
     // Use this for initialization
     void Start()
@@ -27,6 +28,7 @@ public class WireButtonContainer : LogicWire
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(buttonsState + "  " + wireGatesState);
         foreach (WireButton button in buttons)
         {
             if (!button.state)
@@ -38,34 +40,40 @@ public class WireButtonContainer : LogicWire
             {
                 buttonsState = true;
             }
-            if (buttonsState == true)
+            
+        }
+        foreach (WireGate wireGate in wireGates)
+        {
+            if (!wireGate.state)
             {
-                foreach (WireGate wireGate in wireGates)
-                {
-                    if (!wireGate.state)
-                    {
-                        wireGatesState = false; 
-                        buttonsState = false;
-                    }
-                    else
-                    {
-                        wireGatesState = true;
-                    }
-                }
+                wireGatesState = false;
+                break;
+            }
+            else
+            {
+                wireGatesState = true;
             }
         }
         if ((buttonsState != currentButtonsState) || (wireGatesState != currentWireGatesState))
         {
+            if (buttonsState && wireGatesState)
+            {
+                state = true;
+            }
+            else
+            {
+                state = false;
+            }
             foreach (Wire wire in wires)
             {
-                wire.setStatus(buttonsState);
+                wire.setStatus(state);
             }
             foreach (Gate gate in gates)
             {
-                gate.setStatus(buttonsState);
+                gate.setStatus(state);
             }
 
-            if (buttonsState)
+            if (state)
             {
                 spriteR.sprite = GateOn;
             }
@@ -73,7 +81,14 @@ public class WireButtonContainer : LogicWire
             {
                 spriteR.sprite = GateOff;
             }
+        }
+
+        if (buttons.Length > 0)
+        {
             currentButtonsState = buttonsState;
+        }
+        else if (wireGates.Length > 0)
+        {
             currentWireGatesState = wireGatesState;
         }
     }
