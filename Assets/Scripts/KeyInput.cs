@@ -12,6 +12,7 @@ public class KeyInput : MonoBehaviour {
     private bool justPressedUsed = false;
     private bool hasNotReleasedUse = false;
 
+    public GameObject pauseCanvas, rewindCanvas;
     private bool pause = false;
 
     void Start() {
@@ -20,7 +21,6 @@ public class KeyInput : MonoBehaviour {
 
         movement = player.GetComponent<PlayerMovement>();
 
-        GameObject.FindObjectOfType<Canvas>().enabled = false;
     }
 
 	// Update is called once per frame
@@ -45,6 +45,7 @@ public class KeyInput : MonoBehaviour {
         }
 
         testForPause();
+        testForRewind();
 	}
 
     public bool getInputUse()
@@ -68,7 +69,7 @@ public class KeyInput : MonoBehaviour {
             }
             else
             {
-                GameObject.FindObjectOfType<Canvas>().enabled = true;
+                pauseCanvas.SetActive(true);
                 pause = true;
                 Time.timeScale = 0;
             }
@@ -78,9 +79,21 @@ public class KeyInput : MonoBehaviour {
 
     public void unPause()
     {
-        GameObject.FindObjectOfType<Canvas>().enabled = false;
+        pauseCanvas.SetActive(false);
         pause = false;
         Time.timeScale = 1;
+    }
+
+    private void testForRewind()
+    {
+        if(Input.GetAxis("Timeshift") < 0)
+        {
+            rewindCanvas.SetActive(true);
+        }
+        else
+        {
+            rewindCanvas.SetActive(false);
+        }
     }
     
 }
