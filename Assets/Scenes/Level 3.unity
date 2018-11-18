@@ -322,10 +322,11 @@ MonoBehaviour:
   wires:
   - {fileID: 1357515407}
   buttons:
-  - {fileID: 2019858126}
-  - {fileID: 2009295814}
+  - {fileID: 1200072449}
+  - {fileID: 839031330}
   gates:
   - {fileID: 406883122}
+  wireGates: []
 --- !u!4 &231911039 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4440798014324748, guid: 0db3bb2c915d3624389822fd9a18bab9,
@@ -1105,6 +1106,12 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &839031330 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114965299832151712, guid: 1116dd9c7d798a344a3326400c97850d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1925213152}
+  m_Script: {fileID: 11500000, guid: a0e8272cb60dcf8459dfd444a9431f99, type: 3}
 --- !u!1 &840710102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1910,6 +1917,12 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1200072449 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114965299832151712, guid: 1116dd9c7d798a344a3326400c97850d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1533033249}
+  m_Script: {fileID: 11500000, guid: a0e8272cb60dcf8459dfd444a9431f99, type: 3}
 --- !u!1 &1264668742
 GameObject:
   m_ObjectHideFlags: 0
@@ -2297,18 +2310,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34fd49fa50cf95549b3c8d0e344c56b9, type: 2}
   m_IsPrefabAsset: 0
---- !u!114 &2009295814 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114014542872131258, guid: 1116dd9c7d798a344a3326400c97850d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1533033249}
-  m_Script: {fileID: 11500000, guid: a0e8272cb60dcf8459dfd444a9431f99, type: 3}
---- !u!114 &2019858126 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114014542872131258, guid: 1116dd9c7d798a344a3326400c97850d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1925213152}
-  m_Script: {fileID: 11500000, guid: a0e8272cb60dcf8459dfd444a9431f99, type: 3}
 --- !u!1001 &2084324721
 Prefab:
   m_ObjectHideFlags: 0
@@ -2355,5 +2356,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114626739549979528, guid: 0db3bb2c915d3624389822fd9a18bab9, type: 2}
+    - {fileID: 114198153253732156, guid: 0db3bb2c915d3624389822fd9a18bab9, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 0db3bb2c915d3624389822fd9a18bab9, type: 2}
   m_IsPrefabAsset: 0

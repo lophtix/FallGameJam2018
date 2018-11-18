@@ -9,6 +9,8 @@ public class WireButtonContainer : LogicWire
     public WireButton[] buttons;
     public Gate[] gates;
     public WireGate[] wireGates;
+    public Sprite GateOn, GateOff;
+    private SpriteRenderer spriteR;
 
     private bool currentButtonsState = false;
     private bool buttonsState = true;
@@ -19,6 +21,7 @@ public class WireButtonContainer : LogicWire
     void Start()
     {
         wires = gameObject.GetComponentsInChildren<Wire>();
+        spriteR = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -60,6 +63,15 @@ public class WireButtonContainer : LogicWire
             foreach (Gate gate in gates)
             {
                 gate.setStatus(buttonsState);
+            }
+
+            if (buttonsState)
+            {
+                spriteR.sprite = GateOn;
+            }
+            else
+            {
+                spriteR.sprite = GateOff;
             }
             currentButtonsState = buttonsState;
             currentWireGatesState = wireGatesState;
