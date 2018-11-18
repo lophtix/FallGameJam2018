@@ -25,7 +25,7 @@ public class KeyInput : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        movement.setKeyInputs(Input.GetAxis("Vertical"), Input.GetAxis("Horizontal"));
+        movement.setKeyInputs(Input.GetAxisRaw("Vertical"), Input.GetAxisRaw("Horizontal"));
 
         if(Input.GetAxis("Use") != 0)
         {
