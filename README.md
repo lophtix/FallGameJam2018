@@ -12,11 +12,10 @@ Prototype game test video: https://photos.app.goo.gl/zRfQehJgAVcN8qBw7
 Compiled versions coming soon. 
 
 Credits:
-
-  Code: Benjamin Sundvall, Jonatan "Roger" Wästlund and Alvar "Flärpen" Furuhjelm
-  Music & Art: Jonathan Sundvall
-  Level Design: Jonatan "Roger" Wästlund, Erik Sundvall
-  Prototype play testing: Erik Martinsson, Samuel Sundvall
+* Code: Benjamin Sundvall, Jonatan "Roger" Wästlund and Alvar "Flärpen" Furuhjelm
+* Music & Art: Jonathan Sundvall
+* Level Design: Jonatan "Roger" Wästlund, Erik Sundvall
+* Prototype play testing: Erik Martinsson, Samuel Sundvall
 
 Made using: Unity + pixilart.com + FL-studio (music)
 
