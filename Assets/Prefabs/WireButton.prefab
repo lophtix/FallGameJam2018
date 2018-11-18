@@ -52,11 +52,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e8272cb60dcf8459dfd444a9431f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Outputs: []
+  Inputs: []
   buttonOn: {fileID: 21300000, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
   buttonOff: {fileID: 21300002, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
-  reachDistance: 0.16
+  reachDistance: 0.1
   state: 0
   wireGates: []
+  gates: []
 --- !u!212 &212895895932429162
 SpriteRenderer:
   m_ObjectHideFlags: 1
