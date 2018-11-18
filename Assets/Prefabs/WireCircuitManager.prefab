@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4440798014324748}
-  - component: {fileID: 114626739549979528}
+  - component: {fileID: 114198153253732156}
   m_Layer: 0
   m_Name: WireCircuitManager
   m_TagString: LogicWire
@@ -40,7 +40,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114626739549979528
+--- !u!114 &114198153253732156
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -48,7 +48,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1313799733054982}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8e9e6caab9eaa24f878ea2803a0f0c2, type: 3}
+  m_Script: {fileID: 11500000, guid: 54872bb528e4aff43a5c8828a19082cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wires: []
+  buttons: []
+  gates: []

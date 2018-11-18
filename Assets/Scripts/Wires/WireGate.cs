@@ -11,7 +11,11 @@ public class WireGate : LogicWire {
     public Sprite GateClosed, GateOpened;
     public float reachDistance;
     public bool state = false;
+    public bool power = false;
     public bool open = false;
+    private bool currentState = false;
+
+    private Wire[] wires;
 
 
 
@@ -20,6 +24,7 @@ public class WireGate : LogicWire {
         player = GameObject.Find("MainCharacter");
         playerTransform = player.transform;
         keyInput = GameObject.Find("KeyInputController").GetComponent<KeyInput>();
+        wires = gameObject.GetComponentsInChildren<Wire>();
 
     }
 	
@@ -38,12 +43,31 @@ public class WireGate : LogicWire {
                 GetComponent<SpriteRenderer>().sprite = GateOpened;
             }
         }
-        
-	}
 
-    public override void setStatus(bool state)
+        if (power && open)
+        {
+            state = true;
+        }
+        else
+        {
+            state = false;
+        }
+
+        if (currentState != state)
+        {
+            foreach (Wire wire in wires)
+            {
+                wire.setStatus(state);
+            }
+
+            currentState = state;
+        }
+        
+    }
+
+    public override void setStatus(bool status)
     {
-        this.state = state;
+        power = status;
     }
 
     public override void pulse(bool status)
