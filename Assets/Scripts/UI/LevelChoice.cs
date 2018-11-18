@@ -10,5 +10,6 @@ public class LevelChoice : MonoBehaviour {
     public void switchToLevel()
     {
         SceneManager.LoadScene(levelToSwitchTo);
+        Time.timeScale = 1;
     }
 }
