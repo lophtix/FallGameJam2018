@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MvpLevel.unity
     guid: 8fb62e13d7b2b5e4784f176221d37649
+  - enabled: 1
+    path: Assets/Scenes/LevelPicker.unity
+    guid: 0691a0c55da48bc47b95375806d01bf5
   m_configObjects: {}
