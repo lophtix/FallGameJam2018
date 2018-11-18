@@ -31,6 +31,6 @@ public class WireCircuitContainer : LogicWire {
 
     public override void pulse(bool status)
     {
-        setStatus(status);
+
     }
 }

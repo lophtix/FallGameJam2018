@@ -22,6 +22,10 @@ public class Gate : LogicWire {
     public override void pulse(bool status)
     {
 
+    }
+
+    public override void setStatus(bool status)
+    {
         if (status)
         {
             GetComponent<SpriteRenderer>().sprite = GateOpen;
@@ -32,10 +36,5 @@ public class Gate : LogicWire {
             GetComponent<SpriteRenderer>().sprite = GateClosed;
             bc.enabled = true;
         }
-    }
-
-    public override void setStatus(bool status)
-    {
-        
     }
 }

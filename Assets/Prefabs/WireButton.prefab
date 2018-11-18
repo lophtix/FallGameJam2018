@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4928423489195858}
   - component: {fileID: 212895895932429162}
-  - component: {fileID: 114014542872131258}
+  - component: {fileID: 114965299832151712}
   m_Layer: 0
   m_Name: WireButton
   m_TagString: LogicWire
@@ -41,7 +41,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114014542872131258
+--- !u!114 &114965299832151712
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,8 +55,8 @@ MonoBehaviour:
   buttonOn: {fileID: 21300000, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
   buttonOff: {fileID: 21300002, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
   reachDistance: 0.16
-  pressed: 0
-  IAffect: []
+  state: 0
+  wireGates: []
 --- !u!212 &212895895932429162
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -89,8 +89,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 435964461
-  m_SortingLayer: 2
+  m_SortingLayerID: 1810728819
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300002, guid: 3a2fc7ff4abe77842859f6313bb6c535, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
