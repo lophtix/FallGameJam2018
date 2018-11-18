@@ -28,7 +28,6 @@ public class WireButtonContainer : LogicWire
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(buttonsState + "  " + wireGatesState);
         foreach (WireButton button in buttons)
         {
             if (!button.state)
