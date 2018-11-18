@@ -32,6 +32,5 @@ public class MovementPlayback : MonoBehaviour {
         {
             transform.position = new Vector3(-50f, 50f, 0f);
         }
-        
     }
 }
