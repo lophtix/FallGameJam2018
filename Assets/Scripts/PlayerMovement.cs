@@ -45,21 +45,30 @@ public class PlayerMovement : MonoBehaviour {
         
         if (vertical == 0 && horizontal > 0)
         {
-            gameObject.GetComponentInChildren<SpriteRenderer>().sprite = side;
+            gameObject.GetComponentInChildren<Animator>().SetInteger("animId", 2);
             gameObject.GetComponentInChildren<SpriteRenderer>().flipX = false;
         }
         else if (vertical == 0 && horizontal < 0)
         {
-            gameObject.GetComponentInChildren<SpriteRenderer>().sprite = side;
+            gameObject.GetComponentInChildren<Animator>().SetInteger("animId", 2);
             gameObject.GetComponentInChildren<SpriteRenderer>().flipX = true;
         }
         else if(vertical > horizontal)
         {
-            gameObject.GetComponentInChildren<SpriteRenderer>().sprite = back;
+            gameObject.GetComponentInChildren<Animator>().SetInteger("animId", 1);
         }
         else if (vertical < horizontal)
         {
-            gameObject.GetComponentInChildren<SpriteRenderer>().sprite = front;
+            gameObject.GetComponentInChildren<Animator>().SetInteger("animId", 0);
+        }
+
+        if(vertical == 0 && horizontal == 0)
+        {
+            gameObject.GetComponentInChildren<Animator>().enabled = false;
+        }
+        else
+        {
+            gameObject.GetComponentInChildren<Animator>().enabled = true;
         }
         
     }
