@@ -11,8 +11,6 @@ public class WireButton : LogicWire {
     public float reachDistance;
     public bool pressed = false;
 
-    public GameObject[] IAffect;
-
     // Use this for initialization
     void Start () {
        
@@ -42,7 +40,7 @@ public class WireButton : LogicWire {
 
     public override void pulse(bool status)
     {
-        foreach(GameObject obj in IAffect)
+        foreach(GameObject obj in Outputs)
         {
             obj.GetComponent<LogicWire>().pulse(pressed);
         }
