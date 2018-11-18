@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class ClockScript : MonoBehaviour {
     public int tick = 0;
@@ -9,10 +10,12 @@ public class ClockScript : MonoBehaviour {
     public bool resetBool = false;
 
     public GameObject counter;
+    public GameObject timeDisplay;
 
     void Start()
     {
         counter = GameObject.Find("CloneCounter");
+        timeDisplay = GameObject.Find("TimeDisplay");
     }
 
     void FixedUpdate () {
@@ -29,7 +32,9 @@ public class ClockScript : MonoBehaviour {
         {
             TimeReset();
         }
-	}
+
+        timeDisplay.GetComponent<Text>().text = (tick / 50).ToString();
+    }
 
     void TimeReset()
     {
