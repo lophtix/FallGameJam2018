@@ -130,7 +130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &15025528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,8 +243,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000005722, y: -13.425003}
-  m_SizeDelta: {x: 620.9, y: 340.15}
+  m_AnchoredPosition: {x: 0.0000061989, y: -33.2}
+  m_SizeDelta: {x: 635.8, y: 518.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &79012162
 MonoBehaviour:
@@ -332,7 +332,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Credits\nCode: Benjamin Sundvall, Jonatan \"Roger\" W\xE4stlund and Alvar
     \"Fl\xE4rpen\" Furuhjelm\n\nMusic & Art: Jonathan Sundvall\n\nLevel Design: Jonatan
-    \"Roger\" W\xE4stlund, Erik Sundvall\n\nPizza sponsor: Erik Sundvall\n"
+    \"Roger\" W\xE4stlund, Erik Sundvall\n\nPlaytesters: Erik Martinsson\n\nPizza
+    sponsor: Erik Sundvall\n\n\n"
 --- !u!222 &79012164
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -497,7 +498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &702646765
 MonoBehaviour:
   m_ObjectHideFlags: 0
