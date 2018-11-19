@@ -12,7 +12,7 @@ Made at the LiU Fall Game Jam 2018 during 48 hours, the 16:th-18:th november 201
 
 Prototype game test video: https://photos.app.goo.gl/zRfQehJgAVcN8qBw7
 
-Compiled versions coming "soon",  see future [releases](../releases). 
+Compiled versions coming "soon",  see future [releases](../../releases). 
 
 Credits:
 * Code: Benjamin Sundvall, Jonatan "Roger" Wästlund and Alvar "Flärpen" Furuhjelm
