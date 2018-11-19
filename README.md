@@ -11,7 +11,8 @@ Puzzle game with a time traveling alchemist who travels back in time to solve pu
 Made at the LiU Fall Game Jam 2018 during 48 hours, the 16:th-18:th november 2018, at Creactive, Mjärdevi Science Park, Linköping, Sweden. This game is based on the Game Jam theme "metal time-traveling".
 
 Prototype game test video: https://photos.app.goo.gl/zRfQehJgAVcN8qBw7
-Compiled versions coming soon. 
+
+Compiled versions coming "soon" (see future releases). 
 
 Credits:
 * Code: Benjamin Sundvall, Jonatan "Roger" Wästlund and Alvar "Flärpen" Furuhjelm
